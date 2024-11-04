@@ -2,6 +2,7 @@
 #define _CONTEXT_H
 
 #include <libavformat/avformat.h>
+#include <libavcodec/avcodec.h>
 #include <switch.h>
 #include <SDL.h>
 #include <SDL2/SDL_image.h>

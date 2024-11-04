@@ -39,7 +39,7 @@ int setup_socket()
     si_me.sin_family = AF_INET;
     si_me.sin_port = htons(2224);
     si_me.sin_addr.s_addr = htonl(INADDR_ANY);
-    if (bind(s, &si_me, sizeof(si_me)) == -1)
+    if (bind(s, (struct sockaddr *)&si_me, sizeof(si_me)) == -1)
         diep("bind");
     return s;
 }

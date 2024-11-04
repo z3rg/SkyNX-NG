@@ -10,7 +10,7 @@
 #include "renderer.h"
 #include "audio.h"
 static const SocketInitConfig socketInitConf = {
-    .bsdsockets_version = 1,
+    //.bsdsockets_version = 1,
 
     .tcp_tx_buf_size = 0x80000,
     .tcp_rx_buf_size = 0x100000,
